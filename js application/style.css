@@ -1,0 +1,64 @@
+:root {
+    --primary: #00ff41;
+    --danger: #ff3131;
+    --bg: #0d0d0d;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--primary);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hacker-terminal {
+    width: 450px;
+    background: #000;
+    border: 1px solid var(--primary);
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+}
+
+h1 span { color: #fff; }
+
+.status-bar {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+input {
+    width: 100%;
+    background: #111;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background: var(--primary);
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.log-window {
+    margin-top: 20px;
+    height: 120px;
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px dashed var(--primary);
+    padding: 10px;
+    font-size: 0.75rem;
+    overflow-y: auto;
+}
+
+.log-entry { margin-bottom: 5px; }
