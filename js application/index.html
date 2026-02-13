@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EncrypBreak | Logic Experiment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hacker-terminal">
+        <header>
+            <h1>ENCRYP<span>BREAK</span> v2.0</h1>
+            <div class="status-bar">
+                CORE_STABILITY: <span id="stability">100</span>%
+            </div>
+        </header>
+
+        <div class="main-screen">
+            <p id="system-msg">> SYSTEM: Threat detected. Enter Logic Key (1-100).</p>
+            <input type="number" id="logicKey" placeholder="KEY_CODE" oninput="realTimeScan(this.value)">
+            <button id="breakBtn">INJECT_LOGIC</button>
+        </div>
+
+        <div class="log-window" id="logWindow">
+            <div class="log-entry">// SESSION_STARTED...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
