@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi's Productivity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Productivity.<span>OS</span></h1>
+            <p>Welcome back, Sakshi.</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <section class="panel">
+                <h2>// SUBJECT_TRACKER</h2>
+                <form id="subject-form">
+                    <input type="text" id="sub-name" placeholder="Subject (e.g., Python, DSA)" required>
+                    <input type="text" id="sub-task" placeholder="Task description" required>
+                    <input type="date" id="sub-date" required>
+                    <button type="submit">Add Assignment</button>
+                </form>
+                <div id="subject-list" class="list-container"></div>
+            </section>
+
+            <section class="panel">
+                <h2>// DAILY_LOG</h2>
+                <div class="input-group">
+                    <input type="text" id="daily-input" placeholder="What needs to be done today?">
+                    <button onclick="addDailyTask()">+</button>
+                </div>
+                <ul id="daily-list"></ul>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
